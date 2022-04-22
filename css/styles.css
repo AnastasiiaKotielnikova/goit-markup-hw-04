@@ -172,6 +172,9 @@ span {
 .section-list{
     display: flex;  
 }
+.section-list-item{
+    margin-right: 30px; 
+}
 .section-title{
     margin-top: 0;
     margin-bottom: 10px;  
@@ -184,7 +187,6 @@ span {
     text-transform: uppercase;
 }
 .section-text{
-    margin-right: 30px;
     color: var(--header-color);
 
     font-weight: 400;
@@ -324,11 +326,14 @@ span {
 .client-link:hover{
     border: 3px solid var(--accent-color);
 }
-.client-link:focus {
+.client-link:focus{
     border: 3px solid var(--accent-color);
 }
 .client-icon:hover{
     fill: var(--accent-color); 
+}
+.client-icon:focus{
+    fill: var(--accent-color);
 }
 /* footer */
 .footer{
@@ -469,11 +474,12 @@ span {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.section-btn:hover {
-    border: 3px solid var(--accent-color);
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-0px 1px 2px rgba(0, 0, 0, 0.08),
-0px 2px 2px rgba(0, 0, 0, 0.12);
+.section-btn:hover{
+    background-color: var(--accent-color);
+    color: var(--title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-btn:focus{
     background-color: var(--accent-color);
@@ -507,18 +513,14 @@ span {
     width: calc(100% / 3 - 30px); 
     margin-left: 30px;
     margin-bottom: 30px; 
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-top: none; 
 }
 .gallery-item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.gallery-img:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-} 
 .gallery-text{
     padding: 20px 24px;  
 }
